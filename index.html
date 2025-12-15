@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>조모임 랜덤 질문 100</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer data-domain="icebreak.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script>
+  <script type="text/javascript" src="https://tiiny.host/ad-script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>조모임 랜덤 질문 100</h1>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls card">
+      <div class="kicker">카테고리 선택</div>
+      <div class="filters" id="filters"></div>
+      <div class="meta">
+        <span class="pill" id="countPill">남은 질문: 100</span>
+        <span class="dot"></span>
+        <span id="activeCats">선택된 카테고리: 전체</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="question" id="questionBox">아래 버튼을 눌러 첫 질문을 뽑아보세요! 🎲</div>
+      <div class="meta"><span id="lastCat"></span></div>
+
+      <div class="btns" style="margin-top: 12px;">
+        <button class="btn" id="nextBtn">랜덤 뽑기 🎲</button>
+        <button class="btn secondary" id="reshuffleBtn">전체 다시 섞기 ♻️</button>
+      </div>
+
+      <div class="row" style="margin-top: 12px;">
+        <button class="btn ghost" id="shareBtn">공유하기</button>
+        <button class="btn ghost" id="copyBtn">복사하기</button>
+        <button class="btn ghost" id="showAllBtn">전체 목록 보기</button>
+      </div>
+    </section>
+
+    <section class="card" id="allList" style="display:none; margin-top:16px;">
+      <div class="kicker" style="margin-bottom:8px;">전체 질문</div>
+      <ol id="listContainer" style="margin:0; padding-left: 20px;"></ol>
+    </section>
+
+    <p class="footer">© 조모임 아이스브레이커 · 오프라인 전용 HTML</p>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
